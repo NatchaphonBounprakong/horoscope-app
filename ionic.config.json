@@ -1,5 +1,7 @@
 {
   "name": "horoscope-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

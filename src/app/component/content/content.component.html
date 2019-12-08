@@ -1,0 +1,35 @@
+<ion-content
+  [scrollEvents]="true"
+>
+<ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-icon name="call" slot="start"></ion-icon>
+        <ion-input
+          placeholder="ใส่เบอร์โทรศัพท์ของคุณที่นี่"
+          maxlength="10"
+          clearInput
+          [(ngModel)]="number"
+        ></ion-input>
+      </ion-item>
+      <!-- <ion-item> 
+          <ion-label>{{healtContent}}</ion-label>
+          <ion-label>{{loveContent}}</ion-label>
+          <ion-label>{{workContent}}</ion-label>
+      </ion-item> -->
+      <br />
+      <ion-button
+        fill="solid"
+        slot="end"
+        expand="block"
+        color="primary"
+        (click)="onSubmitPhone()"
+        >ยันยัน</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+  <app-healthy *ngIf="isShow" [content]="healtContent"></app-healthy>
+  <app-love *ngIf="isShow" [content]="loveContent"></app-love>
+  <app-work *ngIf="isShow" [content]="workContent"></app-work>
+ 
+</ion-content>

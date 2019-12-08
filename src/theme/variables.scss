@@ -1,6 +1,9 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
-
+@import url("https://fonts.googleapis.com/css?family=Kanit&display=swap");
+* {
+  font-family: "Kanit", sans-serif;
+}
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -74,4 +77,8 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  
 }
+
+
